@@ -1,8 +1,8 @@
 <?php
 $pluginData['_123pay']['type']                        = 'payment';
-$pluginData['_123pay']['name']                        = 'سامانه پرداخت اینترنتی یک دو سه پی';
+$pluginData['_123pay']['name']                        = 'سامانه پرداخت یک دو سه پی';
 $pluginData['_123pay']['uniq']                        = '_123pay';
-$pluginData['_123pay']['description']                 = 'پلاگین پرداخت، سامانه پرداخت اینترنتی یک دو سه پی';
+$pluginData['_123pay']['description']                 = 'پلاگین پرداخت، سامانه پرداخت یک دو سه پی';
 $pluginData['_123pay']['author']['name']              = 'تیم فنی یک دو سه پی';
 $pluginData['_123pay']['author']['url']               = 'https://123pay.ir';
 $pluginData['_123pay']['author']['email']             = 'plugins@123pay.ir';
