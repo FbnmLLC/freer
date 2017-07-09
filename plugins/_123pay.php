@@ -15,7 +15,7 @@ function gateway___123pay( $data ) {
 
 	$merchant_id  = trim( $data['merchant_id'] );
 	$amount       = round( $data['amount'] );
-	$callback_url = $data['callback'];
+	$callback_url = urlencode( $data['callback'] );
 
 	$response = create( $merchant_id, $amount, $callback_url );
 	$result   = json_decode( $response );
