@@ -1,17 +1,17 @@
 <?php
-$pluginData['_123pay']['type']                        = 'payment';
-$pluginData['_123pay']['name']                        = 'سامانه پرداخت یک دو سه پی';
-$pluginData['_123pay']['uniq']                        = '_123pay';
-$pluginData['_123pay']['description']                 = 'پلاگین پرداخت، سامانه پرداخت یک دو سه پی';
-$pluginData['_123pay']['author']['name']              = 'تیم فنی یک دو سه پی';
-$pluginData['_123pay']['author']['url']               = 'https://123pay.ir';
-$pluginData['_123pay']['author']['email']             = 'plugins@123pay.ir';
-$pluginData['_123pay']['field']['config'][1]['title'] = 'کد پذیرنده';
-$pluginData['_123pay']['field']['config'][1]['name']  = 'merchant_id';
+$pluginData['ir123pay']['type']                        = 'payment';
+$pluginData['ir123pay']['name']                        = 'سامانه پرداخت یک دو سه پی';
+$pluginData['ir123pay']['uniq']                        = 'ir123pay';
+$pluginData['ir123pay']['description']                 = 'پلاگین پرداخت، سامانه پرداخت یک دو سه پی';
+$pluginData['ir123pay']['author']['name']              = 'تیم فنی یک دو سه پی';
+$pluginData['ir123pay']['author']['url']               = 'https://123pay.ir';
+$pluginData['ir123pay']['author']['email']             = 'plugins@123pay.ir';
+$pluginData['ir123pay']['field']['config'][1]['title'] = 'کد پذیرنده';
+$pluginData['ir123pay']['field']['config'][1]['name']  = 'merchant_id';
 
-function gateway___123pay( $data ) {
+function gateway__ir123pay( $data ) {
 	global $config, $db, $smarty;
-	require_once 'include/libs/123pay.php';
+	require_once 'include/libs/ir123pay.php';
 
 	$merchant_id  = trim( $data['merchant_id'] );
 	$amount       = round( $data['amount'] );
@@ -35,7 +35,7 @@ function gateway___123pay( $data ) {
 	}
 }
 
-function callback___123pay( $data ) {
+function callback__ir123pay( $data ) {
 	global $db, $get;
 	require_once 'include/libs/123pay.php';
 
