@@ -37,7 +37,7 @@ function gateway__ir123pay( $data ) {
 
 function callback__ir123pay( $data ) {
 	global $db, $get;
-	require_once 'include/libs/123pay.php';
+	require_once 'include/libs/ir123pay.php';
 
 	$merchant_id = trim( $data['merchant_id'] );
 	$State       = $_REQUEST['State'];
