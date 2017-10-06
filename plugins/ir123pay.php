@@ -71,6 +71,9 @@ function callback__ir123pay( $data ) {
 			$output['status']  = 0;
 			$output['message'] = 'پرداخت توسط یک دو سه پی تایید نشد';
 		}
+	} else {
+		$output['status']  = 0;
+		$output['message'] = 'پرداخت توسط کاربر لغو شده است';
 	}
 
 	return $output;
